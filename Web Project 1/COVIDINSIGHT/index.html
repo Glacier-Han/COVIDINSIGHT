@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>코로나한눈에 | 코로나-19 현황부터 의료진 응원까지</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+      <!-- Sidebar - Brand -->
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+        <div class="sidebar-brand-icon rotate-n-15">
+          <i class="fas fa-laugh-wink"></i>
+        </div>
+        <div class="sidebar-brand-text mx-3"style="font-size : 18px;">코로나한눈에</div>
+      </a>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider my-0">
+
+      <!-- Nav Item - Dashboard -->
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>코로나19 국내 현황판</span></a>
+      </li>
+
+
+      <!-- Heading -->
+
+
+      <!-- Divider -->
+      <hr class="sidebar-divider">
+
+      <!-- Heading -->
+      <div class="sidebar-heading">
+        Current Status of COVID-19
+      </div>
+
+
+
+      <li class="nav-item">
+        <a class="nav-link" href="COVID-confirmed-Trend.html">
+          <i class="fas fa-fw fa-chart-area"></i>
+          <span>코로나19 확진자 발생 추이</span></a>
+      </li>
+
+      <!-- Nav Item - Charts -->
+      <li class="nav-item">
+        <a class="nav-link" href="COVID-growth-Trend.html">
+          <i class="fas fa-fw fa-chart-area"></i>
+          <span>코로나19 확진자 증가 추이</span></a>
+      </li>
+
+      <!-- Nav Item - Tables -->
+      <li class="nav-item">
+        <a class="nav-link" href="COVID-complete-Trend.html">
+          <i class="fas fa-fw fa-chart-area"></i>
+          <span>국내 격리해제(완치) 추이</span></a>
+      </li>
+      <!-- Divider -->
+      <hr class="sidebar-divider d-none d-md-block">
+
+      <div class="sidebar-heading">
+        What is COVID-19?
+      </div>
+      <li class="nav-item active">
+        <a class="nav-link" href="What-COVID.html">
+          <i class="fas fa-fw fa-table"></i>
+          <span>코로나19는 어떤 바이러스? </span></a>
+      </li>
+
+      <!-- Sidebar Toggler (Sidebar) -->
+      <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+      </div>
+
+    </ul>
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+
+        <!-- Topbar -->
+        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+          <!-- Sidebar Toggle (Topbar) -->
+          <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+            <i class="fa fa-bars"></i>
+          </button>
+
+          <!-- Topbar Search -->
+          <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+            <div class="input-group">
+              <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <button class="btn btn-primary" type="button">
+                  <i class="fas fa-search fa-sm"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+
+          <!-- Topbar Navbar -->
+          <ul class="navbar-nav ml-auto">
+
+            <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+            <li class="nav-item dropdown no-arrow d-sm-none">
+              <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-search fa-fw"></i>
+              </a>
+
+            <!-- Nav Item - User Information -->
+            <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Byeong Ha Han</span>
+                <img class="img-profile rounded-circle" src="http://drive.google.com/uc?export=view&id=1_J5xlPC8Iqq1jUv8VgGAgRfKPdt3ahUK" style="width: 56px; height: 56px;
+                ">
+              </a>
+              <!-- Dropdown - User Information -->
+              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                  개발자 프로필
+                </a>
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                  설정
+                </a>
+            </li>
+          </ul>
+
+        </nav>
+        <!-- End of Topbar -->
+
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+
+          <!-- 현황판 제목 -->
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 style="border-style: solid; border-color: lightgray; border-width: 2.3px; background-color: white; color : #333333; border-radius: 14px; padding: 6px; font-size: 28px; font-weight="bold";">코로나19 (COVID-19) 국내 현황판</h1>
+          </div>
+
+          <!-- Content Row -->
+          <div class="row">
+
+            <!-- 확진자 모니터 -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-primary shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-primary text-uppercase mb-1" style="font-size: 23px;">국내 확진환자</div>
+                      <!--수치변경-->
+                      <div class="h5 mb-0 font-weight-bold " style="font-size: 26px; color: #333333" >7,755명</div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 사망자 모니터 -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-success shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-bad text-uppercase mb-1" style="font-size: 23px;">국내 사망자</div>
+                      <div class="h5 mb-0 font-weight-bold" style="font-size: 25px; color: red;">60명</div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-result shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-result text-uppercase mb-1" style="font-size: 23px;">국내 격리해제자 (완치)</div>
+                      <div class="h5 mb-0 font-weight-bold" style="font-size: 25px; color: #66cc00;">288명</div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 치사율 모니터 -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card border-left-info shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-info text-uppercase mb-1" style="font-size: 21px;">국내 코로나19 치사율</div>
+                      <div class="row no-gutters align-items-center">
+                        <div class="col-auto">
+                          <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800" style="font-size: 23px;">0.6%</div>
+                        </div>
+                        <div class="col">
+                          <div class="progress progress-sm mr-2">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 2%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- 마스크알리미 -->
+
+          <!-- Content Row -->
+
+          <div class="row">
+
+            <!-- Area Chart -->
+            <div class="col-xl-8 col-lg-7">
+              <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                  <h6 class="m-0 font-weight-bold" style="font-size : 19px; color :#db0000 ">국내 확진환자 증감 그래프로 한눈에 보기</h6>
+                  <div class="dropdown no-arrow">
+
+
+                    </a>
+
+                  </div>
+                </div>
+
+                <!-- Card Body -->
+                <div class="card-body">
+                  <div class="chart-area">
+                    <canvas id="myAreaChart"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pie Chart -->
+            <div class="col-xl-4 col-lg-5">
+              <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                  <h6 class="m-0 font-weight-bold"style="font-size : 19px; color : #489cff ">국내 지역별 코로나 확진환자 한눈에 보기</h6>
+                  <div class="dropdown no-arrow">
+
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
+                    </div>
+                  </div>
+                </div>
+                <!-- Card Body -->
+                <div class="card-body">
+                  <div class="chart-pie pt-4 pb-2">
+                    <canvas id="myPieChart"></canvas>
+                  </div>
+                  <div class="mt-4 text-center small">
+                    <span class="mr-2">
+                      <i class="fas fa-circle text-primary"></i> 대구광역시
+                    </span>
+                    <span class="mr-2">
+                      <i class="fas fa-circle text-success" style="color :#1cc88a;"></i> 경상북도
+                    </span>
+                    <span class="mr-2">
+                      <i class="fas fa-circle text-info"></i> 수도권
+                    </span>
+                    <span class="mr-2">
+                      <i class="fas fa-circle text-else"></i> 타 지역
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+              <!-- Content Column -->
+              <div class="col-lg-6 mb-4">
+
+              <!-- 코로나19 예방법 -->
+              <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold" style="font-size : 20px; color:#6AA121;">코로나19 예방수칙</h6>
+                </div>
+                <div class="card-body">
+                  <p style="letter-spacing : 0.2px;">&nbsp;<a style="font-size:18px; font-weight : 'bolder'; color : #C68E17;">※비누를 이용하여 물에 30초 이상 꼼꼼히 자주 손 씻기! 평소 손 씻기를 생활화하세요.</a>
+                    <ul><li>외출 후나 사람이 많이 모이는 장소를 다녀오신 후에는 반드시 손을 씻으세요.</li>
+                    <li>기침이나 재채기 후에는 꼭 손을 씻으세요.</li></ul>
+                    <a style="font-size:18px; font-weight : 'bolder';color:#835C3B;">※기침 등 호흡기 증상이 있을 경우 반드시 기침 예절준수!</a>
+                      <ul><li>특히, 의료기관 방문 시 마스크 착용하세요.</li>
+                      <li>사람이 많이 모이는 장소 등을 방문시 마스크를 착용하세요.</li>
+                      <li>마스크가 없으면 기침이나 재채기할 때 옷소매로 입과 코 가리세요.</li></ul>
+                    <a style="font-size:18px; font-weight : 'bolder';color:#DC381F;">※눈, 코, 입, 만지지 않기!</a>
+                      <ul><li>중국 여행후 14일 이내 발열 또는 호흡기 증상(기침, 인후통 등), 폐렴이 발생할 경우 보건소, 콜센터(지역번호+120 또는 1339)로 문의</li>
+                      <li>선별 진료소에서 우선 진료받기</li>
+                      <li>의료진에게 반드시 해외여행력 알리기</li></ul>
+                    </p>
+                </div>
+              </div>
+            </div>
+            <!-- Content Column -->
+            <div class="col-lg-6 mb-4">
+
+              <!-- 개발자 한마디 -->
+              <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary" style="font-size : 20px;">개발자의 한마디</h6>
+                </div>
+                <div class="card-body">
+                  <p style="letter-spacing : 0.04px;font-size : 18px;">&nbsp;코로나19로 인해 자유롭게 외출하지 못하고 스트레스 받고계신 모든 국민분들,
+                  <br>주야 구분없이 환자를 위해 힘쓰시는 의료진, 구급대원 분들,<br>그 외 안보이는 곳에서 힘써주시는 분들 모두 고생하십니다.</p>
+                  <p style="font-size : 15px;">&nbsp;-Because of COVID-19, all the citizens who are limited in their daily lives, the medical staff who are working day and night for patients, and those who are working in blind places are all suffering.</p>
+                  <Br>
+
+                  <p class="mb-0" style="letter-spacing : 0.04px;font-size : 18px;">&nbsp;코로나19가 종식되고 원래의 삶으로 돌아가는 그날까지 조금만 더 힘냅시다 :)</p><br>
+                  <p style="font-size : 15px;">&nbsp;-Let's work harder until Corona19 is over and we return to our original lives.</p>
+                </div>
+              </div>
+
+          </div>
+        </div>
+
+
+
+
+        <!-- /.container-fluid -->
+
+      </div>
+      <!-- End of Main Content -->
+
+      <!-- Footer -->
+      <footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span>Copyright &copy; 코로나한눈에 by Glacier Han 2020</span>
+          </div>
+        </div>
+      </footer>
+      <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin-2.min.js"></script>
+
+  <!-- Page level plugins -->
+  <script src="vendor/chart.js/Chart.min.js"></script>
+
+  <!-- Page level custom scripts -->
+  <script src="js/demo/chart-area-demo.js"></script>
+  <script src="js/demo/chart-pie-demo.js"></script>
+
+</body>
+
+</html>
