@@ -139,13 +139,15 @@
               </a>
               <!-- Dropdown - User Information -->
               <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                <a class="dropdown-item" href="DeveloperINFO.html">
-                  <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400" style="color : blue;"></i>
                   개발자 프로필
                 </a>
                 <a class="dropdown-item" href="MakingMotivation.html">
                   <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
                   개발 과정
+                </a>
+
                 </a>
             </li>
           </ul>
@@ -158,31 +160,36 @@
 
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 style="border-style: solid; border-color: lightgray; border-width: 2.3px; background-color: white; color : #333333; border-radius: 14px; padding: 6px; font-size: 28px; font-weight="bold";">코로나19 국내 격리해제(완치) 추이</h1>
+            <h1 style="border-style: solid; border-color: lightgray; border-width: 2.3px; background-color: white; color : #333333; border-radius: 14px; padding: 6px; font-size: 28px; font-weight="bold";">Process of Develop</h1>
           </div>
 
-          <!-- Area Chart -->
-          <div class="col-xl-12 col-lg-12">
-            <div class="card shadow mb-4">
-              <!-- Card Header - Dropdown -->
-              <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                <h6 class="m-0 font-weight-bold" style="font-size : 19px; color :#48CCCD ">국내 격리해제(완치) 그래프로 한눈에 보기 </h6> [누적]
-                <div class="dropdown no-arrow">
+          <!-- 개발 동기 -->
 
 
-                  </a>
+          <hr>
+          <img src="http://drive.google.com/uc?export=view&id=1xC1dL0XTpEdaS6GAZyP-JFy8iL6RDUa3" width="39%" style="border-radius:10px;">&nbsp;&nbsp;&nbsp;
+          <img src="http://drive.google.com/uc?export=view&id=1JzhMi-k_onO45rHsMbnzgXMURzpACls-" width="39.58%" style="border-radius:10px;"><br>
 
-                </div>
-              </div>
+          <p>
+            <br>
+          &nbsp;<strong>코로나19</strong>로 인해 외출이 불가능한 상황에서 하루하루 지루함을 느껴 뭔가 새로운 것을 찾던 중 코딩 공부 시작.<br>&nbsp;평소 관심있었고 해보고싶었던 Web Developing 을 하게 됨.<br><br>
+          &nbsp;HTML, CSS, JavaScript의 이론을 이틀동안 공부하고, 프로젝트를 설계해 보려고 계획을 세움.<br>
+          &nbsp;현재 가장 큰 이슈인 "코로나19" 의 정보를 매일 뉴스로 접했는데, 내가 원하는 <strong>확진환자 발생 추이 등 중요한 정보를 한눈에 보고싶은 사이트</strong>가 있었으면 좋겠다고 생각했음.<br>
+        <br>
+          직접 이를 만들어 보겠다고 다짐하고, 하루의 대부분을 개발에 쏟아부어 첫 프로젝트 <i style="font-size : 18px; font-weight: :'bold';">"코로나한눈에"</i> 를 진행중임. <br><br>
+          현재 기본적인 기능만 넣은 상태이고, 앞으로 더 발전시킬 계획임.<br>
 
-              <!-- Card Body -->
-              <div class="card-body">
-                <div class="chart-area">
-                  <canvas id="myAreaChart"></canvas>
-                </div>
-              </div>
-            </div>
+</p>
+<hr>
+<i style="font-weight : 900;">
+<li> 20.03.10 - 개발 착수.</li>
+<li> 20.03.11 - 도메인 www.covidinsight.coj.kr 등록.</li>
+<li> 20.03.11 - 첫 버전 릴리즈.</li>
+</i>
+<hr>
+<br>
           </div>
+
 
 
         <!-- /.container-fluid -->
@@ -225,8 +232,8 @@
   <!-- Page level plugins -->
   <script src="vendor/chart.js/Chart.min.js"></script>
 
-  <!-- Page level custom scripts -->
-  <script src="js/demo/chart-area-complete.js"></script>
+  <!-- 차트원본 가져오기 -->
+  <script src="js/demo/chart-area-increase.js"></script>
 
 
 </body>
