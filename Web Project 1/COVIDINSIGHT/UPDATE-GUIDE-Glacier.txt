@@ -1,0 +1,46 @@
+
+<!-- 코로나한눈에 -->
+
+  #Developed 20.03.10
+  #Domain_hosting 20.03.11
+    {Hosting > Github Desktop}
+    {Domain > NA.TO (www.covidinsight.coj.kr)}
+    
+//메인파일
+  >index.html
+
+    //누적그래프
+      >COVID-confirmed-Trend.html
+
+    //증가그래프
+      >COVID-growth-Trend.html
+
+    //완치그래프
+      >COVID-complete-Trend.html
+
+    //코로나란?
+      >What-COVID.html
+
+    //응원댓글
+      >Talkdiscuss.html
+
+    //개발자프로필
+      >DeveloperINFO.html
+
+    //개발과정
+      >MakingMotivation.html
+
+
+      (--총 8개--)
+
+
+      <!--업데이트해야할것-->
+
+-> 전체파일
+  (마스크5부제) =1
+
+-> index.html
+  (확진환자, 사망자, 완치자, 치사율) =4
+
+-> 그래프 3개
+  (누적, 증가, 완치) =3
