@@ -9,7 +9,7 @@ var myPieChart = new Chart(ctx, {
   data: {
     labels: ["대구광역시", "경상북도", "서울/경기/인천","타 지역" ],
     datasets: [{
-      data: [5663, 1117, 317, 416],
+      data: [5867, 1143, 415, 444],
       backgroundColor: ['#4e73df', '#1cc88a', '#36b9cc'],
       hoverBackgroundColor: ['#2e59d9', '#17a673', '#2c9faf'],
       hoverBorderColor: "rgba(234, 236, 244, 1)",
