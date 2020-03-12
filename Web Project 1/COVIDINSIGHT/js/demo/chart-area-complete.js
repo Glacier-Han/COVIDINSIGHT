@@ -32,7 +32,7 @@ var ctx = document.getElementById("myAreaChart");
 var myLineChart = new Chart(ctx, {
   type: 'line',
   data: {
-    labels: ["2.27","2.28", "2.29", "3.1", "3.2", "3.3", "3.4", "3.5", "3.6", "3.7", "3.8", "3.9", "3.10","3.11"],
+    labels: ["2.27","2.28", "2.29", "3.1", "3.2", "3.3", "3.4", "3.5", "3.6", "3.7", "3.8", "3.9", "3.10","3.11","3.12"],
     datasets: [{
       label: "국내 코로나19 완치자",
       lineTension: 0.3,
@@ -46,7 +46,7 @@ var myLineChart = new Chart(ctx, {
       pointHoverBorderColor: "rgba(225, 220, 0, 1)",
       pointHitRadius: 10,
       pointBorderWidth: 2,
-      data: [24,26,27,30,31,34,41,88,108,118,130,166,247,288],
+      data: [24,26,27,30,31,34,41,88,108,118,130,166,247,288,333],
     }],
   },
   options: {
