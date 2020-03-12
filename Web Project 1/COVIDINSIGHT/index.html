@@ -46,7 +46,8 @@
       <li class="nav-item active">
         <a class="nav-link" href="index.html">
           <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>코로나19 국내 현황판</span></a>
+          <span>코로나19 국내 현황판</span>
+        </a>
       </li>
 
 
@@ -61,7 +62,7 @@
         Current Status of COVID-19
       </div>
 
-
+      <!-- Nav Item - 누적 그래프 -->
 
       <li class="nav-item">
         <a class="nav-link" href="COVID-confirmed-Trend.html">
@@ -69,19 +70,37 @@
           <span>코로나19 확진자 누적 그래프</span></a>
       </li>
 
-      <!-- Nav Item - Charts -->
+      <!-- Nav Item - 증가율그래프 -->
       <li class="nav-item">
         <a class="nav-link" href="COVID-growth-Trend.html">
           <i class="fas fa-fw fa-chart-area"></i>
           <span>코로나19 확진자 증가 그래프</span></a>
       </li>
 
-      <!-- Nav Item - Tables -->
+      <!-- Nav Item - 완치그래프 -->
       <li class="nav-item">
         <a class="nav-link" href="COVID-complete-Trend.html">
           <i class="fas fa-fw fa-chart-area"></i>
           <span>국내 격리해제(완치) 그래프</span></a>
       </li>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider d-none d-md-block">
+
+      <div class="sidebar-heading">
+        Expectation of an END
+      </div>
+
+      <!-- Nav Item - 비교그래프 -->
+      <li class="nav-item">
+        <a class="nav-link" href="COVID-Trend-compare.html">
+          <i class="fas fa-fw fa-chart-area"></i>
+          <span>코로나19, 과연 언제 끝날까?</span></a>
+          <a class="nav-link" href="Talkdiscuss.html">
+            <i class="fas fa-fw fa-table"></i>
+            <span>서로에게 응원의 한마디 :) </span></a>
+      </li>
+
       <!-- Divider -->
       <hr class="sidebar-divider d-none d-md-block">
 
@@ -92,9 +111,7 @@
         <a class="nav-link" href="What-COVID.html">
           <i class="fas fa-fw fa-table"></i>
           <span>코로나19는 어떤 바이러스? </span></a>
-          <a class="nav-link" href="Talkdiscuss.html">
-            <i class="fas fa-fw fa-table"></i>
-            <span>서로에게 응원의 한마디 :) </span></a>
+
       </li>
 
 
@@ -126,6 +143,7 @@
               <input type="text" class="form-control bg-light border-0 small" placeholder="오늘의 마스크5부제는 출생년도 끝자리 ④ , ⑨ 입니다." style="font-size : 17px; color : #78C7C7; font-weight: bolder;">
 
             </div>
+
           </form>
 
           <!-- Topbar Navbar -->
@@ -165,7 +183,16 @@
 
           <!-- 현황판 제목 -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 style="border-style: solid; border-color: lightgray; border-width: 2.3px; background-color: white; color : #333333; border-radius: 14px; padding: 6px; font-size: 28px; font-weight="bold";">코로나19 (COVID-19) 국내 현황판</h1>
+            <h1 style="border-style: solid; border-color: lightgray; border-width: 2.3px; background-color: white; color : #333333;margin: 0 auto; text-align: center;border-radius: 14px; padding: 9px; font-size: 25.5px; font-weight="bolder";" onclick="updatealert()">
+              &nbsp;코로나19 (COVID-19) &nbsp; 국내 현황판&nbsp;&nbsp;
+
+              <!-- 업데이트버튼 구현 -->
+              <button onclick="updatealert" style="border-radius: 7px; background-color: white; font-size : 13px; font-align : center; padding : 6px;">DB 업데이트</button></h1><br>
+              <script>
+              function updatealert(){
+                alert('2020.03.12 00:00 질병관리본부 발표 기준 최신 DB 상태입니다.')
+              }
+              </script>
           </div>
 
           <!-- Content Row -->
@@ -177,9 +204,9 @@
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-primary text-uppercase mb-1" style="font-size: 23px;">국내 확진환자</div>
+                      <div class="text-xs font-weight-bold text-primary text-uppercase mb-1" style="font-size: 22px;">국내 확진환자</div>
                       <!--수치변경-->
-                      <div class="h5 mb-0 font-weight-bold " style="font-size: 26px; color: #333333" >7,869명</div>
+                      <div class="h5 mb-0 font-weight-bold " style="font-size: 27px; color: #333333" >7,869명</div>
                     </div>
 
                   </div>
@@ -193,8 +220,8 @@
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-bad text-uppercase mb-1" style="font-size: 23px;">국내 사망자</div>
-                      <div class="h5 mb-0 font-weight-bold" style="font-size: 25px; color: red;">66명</div>
+                      <div class="text-xs font-weight-bold text-bad text-uppercase mb-1" style="font-size: 22px;">국내 사망자</div>
+                      <div class="h5 mb-0 font-weight-bold" style="font-size: 27px; color: red;">66명</div>
                     </div>
 
                   </div>
@@ -207,8 +234,8 @@
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-result text-uppercase mb-1" style="font-size: 23px;">국내 격리해제자 (완치)</div>
-                      <div class="h5 mb-0 font-weight-bold" style="font-size: 25px; color: #66cc00;">333명</div>
+                      <div class="text-xs font-weight-bold text-result text-uppercase mb-1" style="font-size: 20px;">국내 격리해제자 (완치)</div>
+                      <div class="h5 mb-0 font-weight-bold" style="font-size: 27px; color: #66cc00;">333명</div>
                     </div>
 
                   </div>
@@ -222,10 +249,10 @@
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-info text-uppercase mb-1" style="font-size: 21px;">국내 코로나19 치사율</div>
+                      <div class="text-xs font-weight-bold text-info text-uppercase mb-1" style="font-size: 20px;">국내 코로나19 치사율</div>
                       <div class="row no-gutters align-items-center">
                         <div class="col-auto">
-                          <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800" style="font-size: 23px;">0.7%</div>
+                          <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800" style="font-size: 25px;">0.7%</div>
                         </div>
                         <div class="col">
                           <div class="progress progress-sm mr-2">
@@ -248,7 +275,7 @@
 
           <div class="row">
 
-            <!-- Area Chart -->
+            <!-- 확진자 증감 Chart -->
             <div class="col-xl-8 col-lg-7">
               <div class="card shadow mb-4">
                 <!-- Card Header - Dropdown -->
@@ -271,7 +298,7 @@
               </div>
             </div>
 
-            <!-- Pie Chart -->
+            <!--지역별 확진자 Chart -->
             <div class="col-xl-4 col-lg-5">
               <div class="card shadow mb-4">
                 <!-- Card Header - Dropdown -->
@@ -316,7 +343,7 @@
               <!-- 코로나19 예방법 -->
               <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold" style="font-size : 20px; color:#6AA121;">코로나19 예방수칙</h6>
+                  <h6 class="m-0 font-weight-bold" style="font-size : 19px; color:#6AA121;">코로나19 예방수칙</h6>
                 </div>
                 <div class="card-body">
                   <p style="letter-spacing : 0.2px;">&nbsp;<a style="font-size:18px; font-weight : 'bolder'; color : #C68E17;">※비누를 이용하여 물에 30초 이상 꼼꼼히 자주 손 씻기! 평소 손 씻기를 생활화하세요.</a>
@@ -341,16 +368,17 @@
               <!-- 개발자 한마디 -->
               <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary" style="font-size : 20px;">개발자의 한마디</h6>
+                  <h6 class="m-0 font-weight-bold text-primary" style="font-size : 19px;">개발자의 한마디</h6>
                 </div>
                 <div class="card-body">
-                  <p style="letter-spacing : 0.04px;font-size : 18px;">&nbsp;코로나19로 인해 자유롭게 외출하지 못하고 스트레스 받고계신 모든 국민분들,
-                  <br>주야 구분없이 환자를 위해 힘쓰시는 의료진, 구급대원 분들,<br>그 외 안보이는 곳에서 힘써주시는 분들 모두 고생하십니다.</p>
+                  <p style="letter-spacing : 0.04px;font-size : 18px;">&nbsp;코로나19로 인해 자유롭게 외출하지 못하고 스트레스 받고계신모든 국민분들,
+                  <br>주야 구분없이 환자를 위해 힘쓰시는 의료진, 구급대원 분들,<br>그 외 안보이는 곳에서 힘써주시는 분들 모두 <strong>고생하십니다.</strong></p>
                   <p style="font-size : 15px;">&nbsp;-Because of COVID-19, all the citizens who are limited in their daily lives, the medical staff who are working day and night for patients, and those who are working in blind places are all suffering.</p>
-                  <Br>
 
-                  <p class="mb-0" style="letter-spacing : 0.04px;font-size : 18px;">&nbsp;코로나19가 종식되고 원래의 삶으로 돌아가는 그날까지 조금만 더 힘냅시다 :)</p><br>
-                  <p style="font-size : 15px;">&nbsp;-Let's work harder until Corona19 is over and we return to our original lives.</p>
+
+                  <p class="mb-0" style="letter-spacing : 0.04px;font-size : 19px; ">&nbsp;코로나19가 종식되고 원래의 삶으로 돌아가는 그날까지 <strong>조금만 더 힘냅시다 :)</strong></p><br>
+                  <p style="font-size : 15px; font-weight : bold;">&nbsp;-Let's work harder until Corona19 is over and we return to our original lives.</p><hr>
+                  <p style="font-size : 12px;"> by Glacier Han 2020.03 </p>
                 </div>
               </div>
 

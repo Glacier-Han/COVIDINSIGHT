@@ -5,7 +5,7 @@
   #Domain_hosting 20.03.11
     {Hosting > Github Desktop}
     {Domain > NA.TO (www.covidinsight.coj.kr)}
-    
+
 //메인파일
   >index.html
 
@@ -44,3 +44,11 @@
 
 -> 그래프 3개
   (누적, 증가, 완치) =3
+
+
+   <!-- 개발 계획 -->
+
+-> 코로나 정의 좀더 자세하게, 출처기입
+-> 개발자 프로필, 개발과정 정리,
+-> 질본 0시기준 실시간업데이트 기입 --> alert 활용
+-> 개발자한마디 업데이트

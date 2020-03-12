@@ -58,6 +58,8 @@
         Current Status of COVID-19
       </div>
 
+
+
       <!-- Nav Item - 누적 그래프 -->
 
       <li class="nav-item">
@@ -111,6 +113,7 @@
       </li>
 
 
+
       <!-- Sidebar Toggler (Sidebar) -->
       <div class="text-center d-none d-md-inline">
         <button class="rounded-circle border-0" id="sidebarToggle"></button>
@@ -160,14 +163,12 @@
               <!-- Dropdown - User Information -->
               <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
                 <a class="dropdown-item" href="DeveloperINFO.html">
-                  <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400" style="color : blue;"></i>
+                  <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                   개발자 프로필
                 </a>
                 <a class="dropdown-item" href="MakingMotivation.html">
                   <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
                   개발 과정
-                </a>
-
                 </a>
             </li>
           </ul>
@@ -180,36 +181,112 @@
 
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 style="border-style: solid; border-color: lightgray; border-width: 2.3px; background-color: white; color : #333333; border-radius: 14px; padding: 6px; font-size: 28px; font-weight="bold";">Process of Develop</h1>
+            <h1 style="border-style: solid; border-color: lightgray; border-width: 2.3px; background-color: white; color : #333333; border-radius: 14px; padding: 6px; font-size: 28px; font-weight="bold";">코로나19 언제 끝날까? (그래프 비교분석)</h1>
           </div>
 
-          <!-- 개발 동기 -->
+          <div class="row">
+
+            <!-- 확진자 증감 Chart -->
+            <div class="col-xl-6 col-lg-5">
+              <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                  <h6 class="m-0 font-weight-bold" style="font-size : 19px; color :#db0000 ">국내 확진환자 증감 그래프로 한눈에 보기</h6>
+                  <div class="dropdown no-arrow">
 
 
-          <hr>
-          <img src="http://drive.google.com/uc?export=view&id=1WVnlfzI0MwRpI__QPJXVLe-MAVEOd6f5" width="39%" style="border-radius:10px;">&nbsp;&nbsp;&nbsp;
-          <img src="http://drive.google.com/uc?export=view&id=1HaV7L-2PYaRqHDnD2lstmvID_0oT_Iey" width="39.58%" style="border-radius:10px;"><br>
+                    </a>
 
-          <p>
-            <br>
-          &nbsp;<strong>코로나19</strong>로 인해 외출이 불가능한 상황에서 하루하루 지루함을 느껴 뭔가 새로운 것을 찾던 중 코딩 공부를 떠올림.<br>&nbsp;평소 관심있었고 해보고 싶었던 Web Developing 을 시작.<br><br>
-          &nbsp;HTML, CSS, JavaScript 를 독학함과 동시에 프로젝트를 설계해 보려고 계획을 세움.<br><br>
-          &nbsp;현재 가장 큰 이슈인 "코로나19" 의 정보를 매일 뉴스로 접했는데, 내가 원하는 <strong>확진환자 발생 추이 등 중요한 정보를 한눈에 보고싶은 사이트</strong>가 있었으면 좋겠다고 생각했음.<br>
-        <br>
-          직접 이를 만들어 보겠다고 다짐하고, 하루의 대부분을 웹 개발에 투자하여 첫 프로젝트 <i style="font-size : 18px; font-weight: :'bold';">"코로나한눈에"</i> 를 진행중임. <br><br>
-          이틀만에 개발된 웹페이지로, 부족한점도 많고 기능도 별로 없지만 앞으로 계속 발전 시켜 나갈 예정.<br>
+                  </div>
+                </div>
 
-</p>
-<hr>
-<i style="font-weight : 900;">
-<li> 20.03.08 - HTML, CSS, JavaScript Study</li>
-<li> 20.03.10 - '코로나한눈에' 개발 착수.</li>
-<li> 20.03.11 - 도메인 www.covidinsight.coj.kr 등록.</li>
-<li> 20.03.11 - 첫 버전 릴리즈.</li>
-</i>
-<hr>
-<br>
+                <!-- Card Body -->
+                <div class="card-body">
+                  <div class="chart-area">
+                    <canvas id="myAreaChart"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- 확진자 증가율 Chart -->
+            <div class="col-xl-6 col-lg-5">
+              <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                  <h6 class="m-0 font-weight-bold" style="font-size : 19px; color :#006F00 ">국내 확진환자 증가율 그래프로 한눈에 보기</h6>
+                  <div class="dropdown no-arrow">
+
+
+                    </a>
+
+                  </div>
+                </div>
+
+                <!-- Card Body -->
+                <div class="card-body">
+                  <div class="chart-area">
+                    <canvas id="myAreaChart1"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 완치자 누적 Chart -->
+            <div class="col-xl-6 col-lg-5">
+              <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                  <h6 class="m-0 font-weight-bold" style="font-size : 19px; color :#48CCCD ">국내 격리해제(완치) 그래프로 한눈에 보기 </h6> [누적]
+                  <div class="dropdown no-arrow">
+
+
+                    </a>
+
+                  </div>
+                </div>
+
+                <!-- Card Body -->
+                <div class="card-body">
+                  <div class="chart-area">
+                    <canvas id="myAreaChart2"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 개발자 그래프 분석 -->
+            <div class="col-xl-6 col-lg-5">
+            <div class="card shadow mb-4">
+              <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold" style="font-size : 19px; color:#6AA121;">코로나19 관련 그래프 분석</h6>
+              </div>
+              <div class="card-body">
+                <a style="font-size:18px; font-weight : 'bolder'; color : blue; padding: 0px;">
+                  ※코로나19 확진자 꾸준히 줄고 있는 추세</a>
+                  <ul style="margin : 5px;"><li>20.03.10 까지 신규 확진판정자가 꾸준히 줄어드는 모습을 보임.  </li>
+                  <li>20.03.11 구로구 콜센터 대규모 감염으로 인한 증가</li>
+                  <li>20.03.12 다시 감소추세로 진입.</li>
+                  <li>신규 격리해제자 (완치자) 급증 추세</li></ul><br>
+
+
+                <a style="font-size:18px; font-weight : 'bolder'; color:#DC381F; padding: 0px;">
+                  ※점점 진전되는 모습을 보이고 있지만 낙관은 금물</a><br>
+                    <ul style="margin : 5px;"><li>아직 지역사회 감염우려가 매우 큰 상황.</li>
+                    <li>의심증상시 선별 진료소에서 우선 진료받기</li>
+                    <li>최대한 외출 자제. 불가피시엔 마스크 필수 착용.</li></ul><br>
+
+                <a style="font-size:20px; font-weight : 'bolder'; color:red;">※완전히 종식하는데는 아직 많은 시간이 걸릴 것으로 예상됨.</a><br><hr></p>
+
+                    <a style="font-size : 12px;"> 본 내용은 객관적인 지표를 기준으로 하여 개발자가 작성한 "주관적인" 분석입니다.</a>
+
+              </div>
+            </div>
           </div>
+            <!-- Row 끝 -->
+          </div>
+
 
 
 
@@ -253,9 +330,10 @@
   <!-- Page level plugins -->
   <script src="vendor/chart.js/Chart.min.js"></script>
 
-  <!-- 차트원본 가져오기 -->
+  <!-- Page level custom scripts -->
+  <script src="js/demo/chart-area-demo.js"></script>
   <script src="js/demo/chart-area-increase.js"></script>
-
+  <script src="js/demo/chart-area-complete.js"></script>
 
 </body>
 
