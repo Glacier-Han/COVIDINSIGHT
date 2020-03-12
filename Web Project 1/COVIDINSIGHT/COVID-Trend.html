@@ -58,6 +58,8 @@
         Current Status of COVID-19
       </div>
 
+
+
       <!-- Nav Item - 누적 그래프 -->
 
       <li class="nav-item">
@@ -160,8 +162,8 @@
               </a>
               <!-- Dropdown - User Information -->
               <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                <a class="dropdown-item" href="#">
-                  <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400" style="color : blue;"></i>
+                <a class="dropdown-item" href="DeveloperINFO.html">
+                  <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                   개발자 프로필
                 </a>
                 <a class="dropdown-item" href="MakingMotivation.html">
@@ -179,34 +181,112 @@
 
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 style="border-style: solid; border-color: lightgray; border-width: 2.3px; background-color: white; color : #333333; border-radius: 14px; padding: 6px; font-size: 28px; font-weight="bold";">About Developer</h1>
+            <h1 style="border-style: solid; border-color: lightgray; border-width: 2.3px; background-color: white; color : #333333; border-radius: 14px; padding: 6px; font-size: 28px; font-weight="bold";">코로나19 언제 끝날까? (그래프 비교분석)</h1>
           </div>
 
-          <!-- 내 소개 -->
+          <div class="row">
 
-          <hr>
-          <img src="http://drive.google.com/uc?export=view&id=1QBbnG2-d_1mc7hDNDONuaVNLzSKB9_Bv" width="30%" style="border-radius:10px;">&nbsp;&nbsp;&nbsp;
-          <img src="http://drive.google.com/uc?export=view&id=1bJ9M6uZpIFhQhVNi1zu44x5ApdeAsRqp
-          " width="40.12%" style="border-radius:10px;"><br>
-
-          <p>
-            <br>
-            <ul style="font-size : 20px;">
-            <li> <strong>Name : </strong>Byeong Ha Han</li>
-            <li><strong>Residence : </strong>Daegu, South Korea</li>
-            <li> <strong>Education : </strong> KNU (Gyeongbuk National University) Major in Electronic Engineering</li>
-            <li> <strong>Military Service :</strong> At <i style="font-weight : 'bold';"> <a href="https://www.dgpolice.go.kr/jungbu/index.do">Daegu Jungbu Police Station</a></i>
-              <br><br>
-
-            <li> <strong>SNS : </strong> Instagram <a href="https://www.instagram.com/h__glacier_/" title="Instagram @h__glacier_" target="_blank">@h__glacier_</a></li>
-            <li> <strong>Blog : </strong> Naver Blog <a class="sns" href="http://blog.naver.com/hbh6449" title="Glacier's Daily Review" target="_blank">※Glacier's Daily Review※</a></li>
-            <li> <strong> Youtube : </strong> Youtube Channel <a href="https://www.youtube.com/channel/UCURgvuyeuozBBEecR1ROZkw?view_as=subscriber" title="Glacier Youtube" target="_blank">"Glacier"</a></li>
-            <li> <strong> E-mail : </strong> hbh6449@naver.com</li>
+            <!-- 확진자 증감 Chart -->
+            <div class="col-xl-6 col-lg-5">
+              <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                  <h6 class="m-0 font-weight-bold" style="font-size : 19px; color :#db0000 ">국내 확진환자 증감 그래프로 한눈에 보기</h6>
+                  <div class="dropdown no-arrow">
 
 
-          </ul>
-</p>
+                    </a>
+
+                  </div>
+                </div>
+
+                <!-- Card Body -->
+                <div class="card-body">
+                  <div class="chart-area">
+                    <canvas id="myAreaChart"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- 확진자 증가율 Chart -->
+            <div class="col-xl-6 col-lg-5">
+              <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                  <h6 class="m-0 font-weight-bold" style="font-size : 19px; color :#006F00 ">국내 확진환자 증가율 그래프로 한눈에 보기</h6>
+                  <div class="dropdown no-arrow">
+
+
+                    </a>
+
+                  </div>
+                </div>
+
+                <!-- Card Body -->
+                <div class="card-body">
+                  <div class="chart-area">
+                    <canvas id="myAreaChart1"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 완치자 누적 Chart -->
+            <div class="col-xl-6 col-lg-5">
+              <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                  <h6 class="m-0 font-weight-bold" style="font-size : 19px; color :#48CCCD ">국내 격리해제(완치) 그래프로 한눈에 보기 </h6> [누적]
+                  <div class="dropdown no-arrow">
+
+
+                    </a>
+
+                  </div>
+                </div>
+
+                <!-- Card Body -->
+                <div class="card-body">
+                  <div class="chart-area">
+                    <canvas id="myAreaChart2"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 개발자 그래프 분석 -->
+            <div class="col-xl-6 col-lg-5">
+            <div class="card shadow mb-4">
+              <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold" style="font-size : 19px; color:#6AA121;">코로나19 관련 그래프 분석</h6>
+              </div>
+              <div class="card-body">
+                <a style="font-size:18px; font-weight : 'bolder'; color : blue; padding: 0px;">
+                  ※코로나19 확진자 꾸준히 줄고 있는 추세</a>
+                  <ul style="margin : 5px;"><li>20.03.10 까지 신규 확진판정자가 꾸준히 줄어드는 모습을 보임.  </li>
+                  <li>20.03.11 구로구 콜센터 대규모 감염으로 인한 증가</li>
+                  <li>20.03.12 다시 감소추세로 진입.</li>
+                  <li>신규 격리해제자 (완치자) 급증 추세</li></ul><br>
+
+
+                <a style="font-size:18px; font-weight : 'bolder'; color:#DC381F; padding: 0px;">
+                  ※점점 진전되는 모습을 보이고 있지만 낙관은 금물</a><br>
+                    <ul style="margin : 5px;"><li>아직 지역사회 감염우려가 매우 큰 상황.</li>
+                    <li>의심증상시 선별 진료소에서 우선 진료받기</li>
+                    <li>최대한 외출 자제. 불가피시엔 마스크 필수 착용.</li></ul><br>
+
+                <a style="font-size:20px; font-weight : 'bolder'; color:red;">◎코로나19가 완전히 종식하는데는 아직 많은 시간이 걸릴 것으로 예상됨.</a><br><hr></p>
+
+                    <a style="font-size : 12px;"> --본 내용은 객관적인 지표를 기준으로 하여 개발자가 작성한 "주관적인" 분석입니다.</a>
+
+              </div>
+            </div>
           </div>
+            <!-- Row 끝 -->
+          </div>
+
 
 
 
@@ -250,9 +330,10 @@
   <!-- Page level plugins -->
   <script src="vendor/chart.js/Chart.min.js"></script>
 
-  <!-- 차트원본 가져오기 -->
+  <!-- Page level custom scripts -->
+  <script src="js/demo/chart-area-demo.js"></script>
   <script src="js/demo/chart-area-increase.js"></script>
-
+  <script src="js/demo/chart-area-complete.js"></script>
 
 </body>
 
